@@ -9,7 +9,7 @@ const Portfolio = () => {
             <h2 className='font-quicksand text-section-h2 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]'>Portfolio</h2>
             {
                 PortfolioArray.map((entry) => (
-                    <div key={entry.title} className='flex flex-col items-center gap-y-4 pt-18'>
+                    <div key={entry.title} className='flex flex-col items-center gap-y-4 pt-18 mt-10'>
                         <h3 className='text-center text-2xl md:text-4xl'>{entry.title}</h3>
                         <div>
                             <Image src={entry.img}
