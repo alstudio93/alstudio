@@ -1,7 +1,6 @@
 import React from 'react'
-import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs"
+import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs"
 import { FaFileContract } from "react-icons/fa"
-import { AiOutlineMail } from "react-icons/ai"
 import Link from 'next/link'
 
 const Footer = () => {

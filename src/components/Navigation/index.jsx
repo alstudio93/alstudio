@@ -48,12 +48,12 @@ export const Navbar = () => {
             <div className="line2"></div>
             <div className="line3"></div>
           </button>
-          <ul id="navigationLinks" className={` lg:flex flex-row lg:items-center gap-x-5 bg-white dark:bg-black ${toggleMobileMenu ? 'flex flex-col items-center pt-20 lg:pl-5 fixed top-16 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
+          <ul id="navigationLinks" className={` lg:flex flex-row lg:items-center gap-x-5  ${toggleMobileMenu ? 'text-slate-200 flex flex-col items-center pt-20 lg:pl-5 fixed top-[100px] bg-slate-900 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
 
             {Links.map((item) => (
               <li key={item.title}>
                 <Link href={item.location}>
-                  <a className={`text-lg lg:text-base  font-nunito text-slate-800 dark:text-slate-200 ${item.title === "Login" ? "login-btn text-slate-100 hover:text-slate-600 py-2 px-6 rounded-lg dark:hover:text-black" : undefined}`} onClick={() => setToggleMobileMenu(false)}>
+                  <a className={`text-lg lg:text-base  font-nunito  dark:text-slate-200 ${item.title === "Login" ? "login-btn text-slate-100 hover:text-slate-600 py-2 px-6 rounded-lg dark:hover:text-black" : undefined}`} onClick={() => setToggleMobileMenu(false)}>
                     {item.title}
                   </a>
                 </Link>
