@@ -5,7 +5,7 @@ const AboutComp = () => {
     return (
         <section id="about" className='flex flex-col items-center max-w-4xl  mx-auto pt-60 gap-y-10 '>
             <h2 className='font-quicksand text-6xl  text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]'>About the Studio</h2>
-            <p className=''>Following his Bachelor's of Music Education, ALStudio was founded by Andrew T. Ladd after discovering a new passion for creating beautiful and performant websites. Now more than ever, humans are impatient creatures, which is why it is crucial to make their first impression of your website a lasting one! By working with ALStudio, you will be guaranteed:
+            <p className=''>Following his Bachelor&#39;s of Music Education, ALStudio was founded by Andrew T. Ladd after discovering a new passion for creating beautiful and performant websites. Now more than ever, humans are impatient creatures, which is why it is crucial to make their first impression of your website a lasting one! By working with ALStudio, you will be guaranteed:
             </p>
             <ul className='px-5  text-left list-disc w-full'>
                 <li>
