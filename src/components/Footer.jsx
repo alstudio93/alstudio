@@ -10,9 +10,9 @@ const Footer = () => {
 
                 {/* <!-- icons --> */}
                 <div className="flex items-center gap-x-5">
-                    <Link href="https://www.linkedin.com/company/bupcards"><a target="_blank" rel="noreferrer" title="Visit LinkedIn"><BsLinkedin className='text-2xl' /></a></Link>
-                    <Link href="https://www.instagram.com/bup.cards"><a target="_blank" rel="noreferrer" title="Visit Instagram"><BsInstagram className='text-2xl' /></a></Link>
-                    <Link href="https://twitter.com/bupcards"><a target="_blank" rel="noreferrer" title="Visit Twitter"><BsTwitter className='text-2xl' /></a></Link>
+                    {/* <Link href="https://www.linkedin.com/company/bupcards"><a target="_blank" rel="noreferrer" title="Visit LinkedIn"><BsLinkedin className='text-2xl' /></a></Link> */}
+                    <Link href="https://www.instagram.com/alstudio93/"><a target="_blank" rel="noreferrer" title="Visit Instagram"><BsInstagram className='text-2xl' /></a></Link>
+                    <Link href="https://twitter.com/AndrewTLadd"><a target="_blank" rel="noreferrer" title="Visit Twitter"><BsTwitter className='text-2xl' /></a></Link>
                     <>
                         <label htmlFor="my-modal" className="cursor-pointer modal-button "><FaFileContract className='text-2xl' title='View Contract' /></label>
 

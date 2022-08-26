@@ -5,8 +5,8 @@ import { PortfolioArray } from './PortfolioArray'
 
 const Portfolio = () => {
     return (
-        <section id="portfolio" className='flex flex-col items-center max-w-4xl pb-20 mx-auto pt-60 gap-y-10 '>
-            <h2 className='font-quicksand text-6xl text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]'>Portfolio</h2>
+        <section id="portfolio" className='flex flex-col items-center max-w-4xl pb-20 mx-auto pt-60 gap-y-10 px-2'>
+            <h2 className='font-quicksand text-section-h2 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]'>Portfolio</h2>
             {
                 PortfolioArray.map((entry) => (
                     <div key={entry.title} className='flex flex-col items-center gap-y-4  pt-20'>
@@ -19,7 +19,7 @@ const Portfolio = () => {
                                 className="rounded-lg"
                             />
                         </div>
-                        <p className='text-center max-w-[740px]'>{entry.about}</p>
+                        <p className='text-center max-w-[320px] sm:max-w-[740px]'>{entry.about}</p>
                         <div>
                             <h4 className='text-center'>Built with:</h4>
                             <ul className=' flex gap-x-4'>

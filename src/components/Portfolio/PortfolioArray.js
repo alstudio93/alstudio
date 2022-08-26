@@ -42,5 +42,22 @@ export const PortfolioArray = [
         websiteURL: "https://www.charrismusic.com",
         websiteText: "Visit CHarrisMusic"
     },
+    {
+        title: "Ember House Grille",
+        img: "/assets/portfolio/emberhouse.png",
+        about: "Ember House Grille is a pseudo restaurant branded, designed, and created by Loom Co. & ALStudio",
+        builtWith: [
+            {
+                title: "NextJS",
+                url: "https://nextjs.org/"
+            },
+            {
+                title: "Tailwind CSS",
+                url: "https://tailwindcss.com/"
+            },
+        ],
+        websiteURL: "https://ember-house.vercel.app/",
+        websiteText: "Visit Ember House"
+    },
 
 ]
