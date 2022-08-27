@@ -17,7 +17,7 @@ export const Navbar = () => {
     if (mounted && resolvedTheme === "light") {
       return (
         <>
-          <Link href="/"><Image src="/assets/logo-transparent.png" height="60" width="120" alt="ALStudio Logo" className='cursor-pointer' /></Link>
+          <Link href="/"><img src="/assets/logo-ogimage.png" height="60" width="120" alt="ALStudio Logo" title="ALStudio Logo created by StreamyG" className='cursor-pointer' /></Link>
         </>
       )
     }
@@ -25,7 +25,7 @@ export const Navbar = () => {
     else if (mounted && resolvedTheme === "dark") {
       return (
         <>
-          <Link href="/"><Image src="/assets/logo.png" height="60" width="120" alt="ALStudio Logo" className='cursor-pointer' /></Link>
+          <Link href="/"><Image src="/assets/logo.png" height="60" width="120" alt="ALStudio Logo" title="ALStudio Logo created by StreamyG" className='cursor-pointer' /></Link>
         </>
       )
     }
