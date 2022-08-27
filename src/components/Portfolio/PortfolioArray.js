@@ -1,6 +1,6 @@
 export const PortfolioArray = [
     {
-        title: "BŪP",
+        title: "BŪP Digital Business Card",
         createdBy: "Developed by ALStudio",
         img: "/assets/portfolio/bup.png",
         about: "Save time, money, & never miss a connection again with your new digital business card - BŪP! You only get one first impression, so ditch the paper business cards, and join the future of networking today!",
