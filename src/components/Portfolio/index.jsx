@@ -17,6 +17,7 @@ const Portfolio = () => {
                                 height="250"
                                 quality={100}
                                 className="rounded-lg"
+                                alt={entry.title}
                             />
                         </div>
                         <p className='text-center max-w-[320px] sm:max-w-[740px]'>{entry.about}</p>
