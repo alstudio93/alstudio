@@ -6,7 +6,7 @@ import { PortfolioArray } from './PortfolioArray'
 const Portfolio = () => {
     return (
         <section id="portfolio" className='flex flex-col items-center max-w-5xl px-2 pb-20 mx-auto pt-28 md:pt-30 lg:pt-60 gap-y-10'>
-            <h2 className='font-quicksand text-section-h2 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]'>Portfolio</h2>
+            <h2 className='font-quicksand font-medium text-section-h2 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]'>Portfolio</h2>
             {
                 PortfolioArray.map((entry) => (
                     <div key={entry.title} className='flex flex-col items-center mt-10 gap-y-4 pt-18'>

@@ -1,4 +1,4 @@
-import { About, Footer, Hero, Portfolio, Head, Divider } from '../components'
+import { About, Footer, Hero, Portfolio, Head, Divider, Media } from '../components'
 import Navbar from '../components/Navigation'
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
         <Divider skew="-skew-y-12" />
         <About />
         <Divider skew="skew-y-12" />
+        <Media />
         <Portfolio />
         {/* <Contact /> */}
       </main>
