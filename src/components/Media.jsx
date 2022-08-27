@@ -5,7 +5,7 @@ const BupVideo = () => {
             className="flex flex-col items-center pt-20 mx-auto max-w-section gap-y-8"
         >
             <h2
-                className="font-quicksand font-medium sm:text-section-h2 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]"
+                className="font-quicksand font-medium text-2xl sm:text-4xl md:text-5xl lg:text-6xl py-4 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]"
             >
                 Build an Accessible, <br />Responsive Navigation
             </h2>
