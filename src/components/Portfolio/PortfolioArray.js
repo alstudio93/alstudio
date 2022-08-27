@@ -1,6 +1,7 @@
 export const PortfolioArray = [
     {
         title: "BŪP",
+        createdBy: "Developed by ALStudio",
         img: "/assets/portfolio/bup.png",
         about: "Save time, money, & never miss a connection again with your new digital business card - BŪP! You only get one first impression, so ditch the paper business cards, and join the future of networking today!",
         builtWith: [
@@ -19,7 +20,8 @@ export const PortfolioArray = [
     },
     {
         title: "CHarrisMusic, LLC",
-        img: "/assets/portfolio/img3.png",
+        createdBy: "Developed by ALStudio",
+        img: "/assets/portfolio/charrismusic.png",
         about: "Dr. Christopher H. Harris is a choral music educator, conductor, and composer. His choirs have been recognized nationally in the US and his compositions have been performed internationally.",
         builtWith: [
             {
@@ -44,8 +46,9 @@ export const PortfolioArray = [
     },
     {
         title: "Ember House Grille",
-        img: "/assets/portfolio/emberhouse.png",
-        about: "Ember House Grille is a pseudo restaurant branded, designed, and created by Loom Co. & ALStudio",
+        createdBy: "Design, Developed, and Branded by ALStudio & Loom Co. ",
+        // img: "/assets/portfolio/emberhouse.png",
+        about: "Created by Loom Co. and ALStudio, Ember House Grille is a restaurant created by us to simulate how we would orchestrate a full brand package. This was our first project working together and from the moment we started collaborating in Figma, we knew that we were in for a good time.",
         builtWith: [
             {
                 title: "NextJS",
@@ -57,7 +60,47 @@ export const PortfolioArray = [
             },
         ],
         websiteURL: "https://ember-house.vercel.app/",
-        websiteText: "Visit Ember House"
+        websiteText: "Visit Ember House",
+        branding: [
+            {
+                img: "/assets/portfolio/EmberHouse/ember-house-one.png",
+                alt: "Ember House Branding",
+                imgHeight: 200,
+                imgWidth: 300,
+
+            },
+            {
+                img: "/assets/portfolio/EmberHouse/ember-house-two.png",
+                alt: "Ember House Branding",
+                imgHeight: 200,
+                imgWidth: 300,
+            },
+            {
+                img: "/assets/portfolio/EmberHouse/ember-house-three.png",
+                alt: "Ember House Branding",
+                imgHeight: 200,
+                imgWidth: 300,
+            },
+            {
+                img: "/assets/portfolio/EmberHouse/ember-house-four.png",
+                alt: "Ember House Branding",
+                imgHeight: 200,
+                imgWidth: 300,
+            },
+            {
+                img: "/assets/portfolio/EmberHouse/ember-house-five.png",
+                alt: "Ember House Branding",
+                imgHeight: 200,
+                imgWidth: 300,
+            },
+            {
+                img: "/assets/portfolio/EmberHouse/ember-house-six.png",
+                alt: "Ember House Branding",
+                imgHeight: 200,
+                imgWidth: 300,
+            },
+
+        ]
     },
 
 ]
