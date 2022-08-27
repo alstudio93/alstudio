@@ -7,7 +7,7 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <>
-            <footer id="contact" className="mx-auto pt-6 flex flex-col gap-y-5 items-center pb-3 justify-center shadow-lg dark:shadow-none dark:bg-black dark:text-slate-200">
+            <footer id="contact" className="flex flex-col items-center justify-center pt-6 pb-3 mx-auto shadow-lg gap-y-5 dark:shadow-none dark:bg-black dark:text-slate-200">
 
                 {/* <!-- icons --> */}
                 <div className="flex items-center gap-x-5">
@@ -15,7 +15,7 @@ const Footer = () => {
                     <Link href="https://www.instagram.com/alstudio93/"><a target="_blank" rel="noreferrer" title="Visit Instagram"><BsInstagram className='text-2xl' /></a></Link>
                     <Link href="https://twitter.com/AndrewTLadd"><a target="_blank" rel="noreferrer" title="Visit Twitter"><BsTwitter className='text-2xl' /></a></Link>
                     <Link href="https://github.com/alstudio93/alstudio"><a target="_blank" rel="noreferrer" title="Visit Twitter"><BsGithub className='text-2xl' /></a></Link>
-                    <Link href="mailto: alstudiowebdev@gmail.com"><a target="_blank" rel="noreferrer" title="Contact ALStudio"><AiOutlineMail className='text-2xl' /></a></Link>
+                    <Link href="mailto: alstudiowebdev@gmail.com"><a target="_blank" rel="noreferrer" title="Contact ALStudio"><AiOutlineMail className='text-2xl animate-bounce' /></a></Link>
                     {/* <>
                         <label htmlFor="my-modal" className="cursor-pointer modal-button "><FaFileContract className='text-2xl' title='View Contract' /></label>
 
