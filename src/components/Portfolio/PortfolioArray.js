@@ -48,7 +48,7 @@ export const PortfolioArray = [
         title: "Ember House Grille",
         createdBy: "Design, Developed, and Branded by ALStudio & Loom Co. ",
         // img: "/assets/portfolio/emberhouse.png",
-        about: "Created by Loom Co. and ALStudio, Ember House Grille is a restaurant created by us to simulate how we would orchestrate a full brand package. This was our first project working together and from the moment we started collaborating in Figma, we knew that we were in for a good time.",
+        about: "Created by Loom Co. and ALStudio, Ember House Grille is a restaurant designed to demonstrate how we would orchestrate a full brand package. This was our first project working together and from the moment we started collaborating in Figma, we knew that we were in for a good time.",
         builtWith: [
             {
                 title: "NextJS",
