@@ -6,3 +6,4 @@ export { default as Footer } from './Footer'
 export { default as Contact } from './Contact'
 export { default as Head } from "./Navigation/Head"
 export { default as Divider } from "./Divider"
+export {default as Blog} from './Blog'

@@ -12,6 +12,10 @@ export const Links = [
         location: "#portfolio"
     },
     {
+        title: "Blog",
+        location: "#blog"
+    },
+    {
         title: "Get in Touch",
         location: "#contact"
     },

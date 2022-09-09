@@ -20,7 +20,7 @@ module.exports = {
         'hero-h1': 'clamp(2.2rem, 9vw, 4rem)',
         'hero-p': 'clamp(1.2rem, 4vw, 1.875rem)',
         'section-h2': 'clamp(2.2rem, 9vw, 4rem)',
-        'contact-h3': 'clamp(1.6rem, 5vw, 3rem)',
+        'blog-card-h3': 'clamp(1.6rem, 5vw, 2rem)',
         'contact-h4': 'clamp(1.1rem, 3vw, 1.6rem)'
       },
       maxWidth: {
@@ -32,7 +32,8 @@ module.exports = {
     },
     fontFamily: {
       'nunito': 'Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
-      'quicksand': 'Quicksand, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif'
+      'quicksand': 'Quicksand, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+      'montserrat': 'Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
     },
   },
   darkMode: "class",

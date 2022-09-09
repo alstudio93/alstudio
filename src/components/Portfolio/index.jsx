@@ -5,8 +5,8 @@ import { PortfolioArray } from './PortfolioArray'
 
 const Portfolio = () => {
     return (
-        <section id="portfolio" className='flex flex-col items-center max-w-5xl px-2 pt-32 pb-20 mx-auto md:pt-30 lg:pt-52 gap-y-10'>
-            <h2 className='font-quicksand font-medium text-section-h2 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]'>Portfolio</h2>
+        <section id="portfolio" className='flex flex-col items-center max-w-5xl px-2 pt-32 mx-auto md:pt-30 lg:pt-52 gap-y-10'>
+            <h2 className='font-montserrat font-medium text-section-h2 text-center dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br dark:from-[#949494] dark:to-[#fff]'>Portfolio</h2>
             {
                 PortfolioArray.map((entry) => (
                     <div key={entry.title} className='flex flex-col items-center pt-10 lg:pt-0 lg:mt-10 gap-y-4'>
@@ -50,7 +50,7 @@ const Portfolio = () => {
                                 }
                             </ul>
                         </div>
-                        <Link href={entry?.websiteURL}><a target="_blank" rel="noreferrer" className='px-4 py-2 border rounded-lg border-slate-200'>{entry.websiteText}</a></Link>
+                        <Link href={entry?.websiteURL}><a target="_blank" rel="noreferrer" className='w-auto px-6 py-2 rounded-lg shadow-lg dark:border border-slate-200 dark:shadow-none'>{entry.websiteText}</a></Link>
                     </div>
                 ))
             }

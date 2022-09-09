@@ -34,7 +34,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className='fixed top-0 left-0 right-0 z-10 p-4 bg-white dark:shadow-none navbar-style-wrapper dark:bg-black '>
+      <div className='fixed top-0 left-0 right-0 z-10 p-4 bg-white shadow-lg dark:shadow-none navbar-style-wrapper dark:bg-black '>
         <nav id="navbar"
           className='flex items-center justify-between mx-auto max-w-section'
         >
@@ -53,7 +53,7 @@ export const Navbar = () => {
             {Links.map((item) => (
               <li key={item.title}>
                 <Link href={item.location}>
-                  <a className={`text-lg lg:text-base  font-nunito  dark:text-slate-200 ${item.title === "Login" ? "login-btn text-slate-100 hover:text-slate-600 py-2 px-6 rounded-lg dark:hover:text-black" : undefined}`} onClick={() => setToggleMobileMenu(false)}>
+                  <a className={`text-lg lg:text-base  font-montserrat  dark:text-slate-200 ${item.title === "Login" ? "login-btn text-slate-100 hover:text-slate-600 py-2 px-6 rounded-lg dark:hover:text-black" : undefined}`} onClick={() => setToggleMobileMenu(false)}>
                     {item.title}
                   </a>
                 </Link>
