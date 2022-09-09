@@ -9,7 +9,7 @@ const Blog = () => {
         <div className='grid grid-cols-1 py-10 mx-auto gap-y-10 lg:grid-cols-2 gap-x-20 max-w-section justify-items-center'>
             {
                 PostData.map((post)=> (
-                    <article className='shadow-lg dark:shadow-none flex flex-col items-center max-w-[400px]  rounded-2xl   border border-[#ffffffa4]'>
+                    <article key={post.title} className='shadow-lg dark:shadow-none flex flex-col items-center max-w-[400px]  rounded-2xl   border border-[#ffffffa4]'>
                         <div className='relative w-full h-80'>
                             <Image src={post.image} className='object-cover w-full rounded-tl-2xl rounded-tr-2xl' fill  />
                         </div>            
