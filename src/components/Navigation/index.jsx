@@ -48,7 +48,7 @@ export const Navbar = () => {
             <div className="line2"></div>
             <div className="line3"></div>
           </button>
-          <ul id="navigationLinks" className={` lg:flex flex-row lg:items-center gap-x-5  ${toggleMobileMenu ? 'text-slate-200 flex flex-col items-center pt-20 lg:pl-5 fixed top-[100px] bg-slate-900 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
+          <ul id="navigationLinks" className={` lg:flex flex-row lg:items-center gap-x-5  ${toggleMobileMenu ? 'text-slate-200 flex flex-col items-center pt-20 lg:pl-5 fixed top-[89px] bg-slate-900 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
 
             {Links.map((item) => (
               <li key={item.title}>

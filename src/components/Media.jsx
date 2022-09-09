@@ -2,12 +2,12 @@
 const BupVideo = () => {
     return (
         <section
-            className="flex flex-col items-center pt-32 mx-auto lg:pt-56 max-w-section gap-y-8"
+            className="flex flex-col items-center px-2 pt-32 mx-auto lg:pt-56 max-w-section gap-y-8"
         >
             <h2
-                className="font-quicksand font-medium text-2xl sm:text-4xl md:text-5xl lg:text-6xl py-4 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff]"
+                className="font-quicksand font-medium text-section-h2 leading-[1.2] py-4 text-center text-transparent bg-clip-text bg-gradient-to-br from-[#949494] to-[#fff] max-w-[1000px]"
             >
-                Build an Accessible, <br />Responsive Navigation
+                Build an Accessible and Responsive Navigation
             </h2>
 
             <div className="w-full max-w-3xl">

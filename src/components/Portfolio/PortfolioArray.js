@@ -45,6 +45,24 @@ export const PortfolioArray = [
         websiteText: "Visit CHarrisMusic"
     },
     {
+        title: "Davies Law Firm, PLLC",
+        createdBy: "Developed by ALStudio",
+        img: "/assets/portfolio/daviddavieswebsite.webp",
+        about: "David Davies is an attorney located in Little Rock, Arkansas. He provides Estate Planning, Elder Law, and Veteran Planning Solutions. Together we worked to do a full revamp of his website to make it more modern and accessible.",
+        builtWith: [
+            {
+                title: "NextJS",
+                url: "https://nextjs.org/"
+            },
+            {
+                title: "Tailwind CSS",
+                url: "https://tailwindcss.com/"
+            },
+        ],
+        websiteURL: "https://www.daviddavieslaw.com",
+        websiteText: "Visit Davies Law Firm, PLLC"
+    },
+    {
         title: "Ember House Grille",
         createdBy: "Design, Developed, and Branded by ALStudio & Loom Co. ",
         // img: "/assets/portfolio/emberhouse.png",
