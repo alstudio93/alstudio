@@ -3,7 +3,7 @@ import { MediaData } from "./MediaData"
 const MediaComp = () => {
     return (
         <section
-            className="flex flex-col items-center px-2 pt-32 mx-auto lg:pt-56 max-w-section gap-y-8"
+            id="media" className="flex flex-col items-center px-2 pt-32 mx-auto lg:pt-56 max-w-section gap-y-8"
         >
             {
                 MediaData.map((item)=> (

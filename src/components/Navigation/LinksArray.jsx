@@ -8,6 +8,10 @@ export const Links = [
         location: "#about"
     },
     {
+        title: "Media",
+        location: "#media"
+    },
+    {
         title: "Portfolio",
         location: "#portfolio"
     },
