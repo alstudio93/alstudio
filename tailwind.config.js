@@ -19,7 +19,7 @@ module.exports = {
       fontSize: {
         'hero-h1': 'clamp(2.2rem, 9vw, 4rem)',
         'hero-p': 'clamp(1.2rem, 4vw, 1.875rem)',
-        'section-h2': 'clamp(2.2rem, 9vw, 4rem)',
+        'section-h2': 'clamp(1.5rem, 7vw, 4rem)',
         'blog-card-h3': 'clamp(1.6rem, 5vw, 2rem)',
         'contact-h4': 'clamp(1.1rem, 3vw, 1.6rem)'
       },
