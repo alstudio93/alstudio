@@ -7,35 +7,32 @@ export default function Home() {
 	return (
 		<>
 			{/* Hero Section */}
-			<section className="flex flex-col items-center">
-				<div className="flex justify-center items-center pt-32">
-					<Image src="/heading.svg" alt="ALStudio" width={800} height={800} />
+			<section className="mt-8 lg:mt-5 flex flex-col items-center justify-between max-w-7xl w-full mx-auto">
+				<div className="w-full flex flex-col xl:flex-row justify-center items-center gap-x-44 gap-y-10 pt-10">
+					<Image src="/heading-cropped.png" alt="ALStudio" width={720} height={720} className="max-w-[500px] w-2/3 sm:w-5/12" />
 					<div className="flex flex-col items-center gap-y-5">
-						<h1 className=" font-montserrat text-white text-[6rem] leading-tight text-center">
+						<h1 className="font-montserrat text-white text-h1-clamp leading-tight text-center">
 							Welcome to <br /> ALStudio
 						</h1>
-						<p className="font-nunito text-white text-center text-3xl">
-							Your Vision is My Blueprint.
+						<p className="font-nunito text-white text-center text-sub-heading-clamp">
+							Your Vision <br className="md:hidden"/> is My Blueprint.
 						</p>
 						<Link
 							href="#contact"
-							className="mt-5 text-white font-semibold p-3 w-72 text-center text-xl border rounded-full hover:bg-white hover:text-[#010615] transition-all"
+							className="lg:mt-5 text-white font-semibold p-3 w-11/12 text-center text-xl border rounded-full hover:bg-white hover:text-[#010615] transition-all"
 						>
 							Let&apos;s Connect!
 						</Link>
 					</div>
 				</div>
-				<div className="mt-20 flex justify-center items-center gap-x-10">
-					<div className="w-96 h-[2px] bg-white"></div>
-					<Link href="">
-						<ChevronDown size={64} className="text-white" />
-					</Link>
-					<div className="w-96 h-[2px] bg-white"></div>
-				</div>
+
+				<Link href="#about" className="mt-10">
+					<ChevronDown size={64} className="text-white" />
+				</Link>
 			</section>
 
 			{/* About ALStudio Section */}
-			<section className="max-w-7xl w-full mx-auto py-32">
+			<section id="about" className="flex flex-col justify-between h-full items-center max-w-7xl w-full mx-auto mt-32 scroll-m-52">
 				<h2 className="font-montserrat text-white text-[6rem] leading-tight text-center">
 					About Me
 				</h2>
@@ -57,12 +54,16 @@ export default function Home() {
 						make something amazing happen. Welcome to the Studio!
 					</p>
 				</div>
+
+				<Link href="#portfolio" className="mt-8">
+					<ChevronDown size={64} className="text-white" />
+				</Link>
 			</section>
 
 			{/* Portfolio Section */}
 			<section
 				id="portfolio"
-				className="flex flex-col items-center max-w-5xl px-2 py-32 mx-auto md:pt-30 lg:pt-52 gap-y-10 text-white"
+				className="flex flex-col items-center max-w-5xl px-2 py-32 mx-auto md:pt-30 lg:mt-52 gap-y-10 text-white"
 			>
 				<h2 className="font-montserrat text-white text-[6rem] leading-tight text-center">
 					Portfolio
@@ -98,7 +99,7 @@ export default function Home() {
 								))}
 							</div>
 						)}
-						<p className="text-center max-w-[320px] sm:max-w-[740px] lg:max-w-[830px] lg:text-lg font-nunito">
+						<p className="text-center max-w-[320px] sm:max-w-[740px] lg:max-w-[830px] lg:text-lg font-nunito ">
 							{entry.about}
 						</p>
 						<div>
@@ -125,6 +126,93 @@ export default function Home() {
 						</Link>
 					</div>
 				))}
+			</section>
+
+			<section id="contact" className="max-w-7xl w-full mx-auto mt-32 mb-16 scroll-m-28">
+				<h2 className="font-montserrat text-white text-[6rem] leading-tight text-center">
+					Contact
+				</h2>
+				<div className="max-w-2xl mx-auto my-10 p-8 rounded-lg bg-white">
+					<h2 className="text-4xl text-center mb-6 font-montserrat">
+									Tell me about your project
+					</h2>
+					<form action="#" method="POST" className="font-nunito">
+						<div className="mb-4">
+							<label htmlFor="firstName" className=" text-gray-700">
+								First Name
+							</label>
+							<input
+								type="text"
+								name="firstName"
+								id="firstName"
+								className="mt-1 py-1 px-2 w-full rounded-xl border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+								placeholder="Andrew"
+							/>
+						</div>
+						<div className="mb-4">
+							<label htmlFor="lastName" className="font-medium text-gray-700">
+								Last Name
+							</label>
+							<input
+								type="text"
+								name="lastName"
+								id="lastName"
+								className="mt-1 py-1 px-2 w-full rounded-xl border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+								placeholder="Ladd"
+							/>
+						</div>
+						<div className="mb-4">
+							<label htmlFor="email" className="font-medium text-gray-700">
+								Email Address
+							</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								className="mt-1 py-1 px-2 w-full rounded-xl border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+								placeholder="andrew.laddstudio@gmail.com"
+							/>
+						</div>
+						<div className="mb-4">
+							<label
+								htmlFor="websiteType"
+								className=" text-gray-700"
+							>
+								Type of Website
+							</label>
+							<select
+								id="websiteType"
+								name="websiteType"
+								className="mt-1 block w-full rounded-md p-[6px] shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+							>
+								<option value="personal">Personal</option>
+								<option value="professional">Professional</option>
+								<option value="portfolio">Portfolio</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div className="mb-4">
+							<label htmlFor="message" className=" text-gray-700">
+								Your Message
+							</label>
+							<textarea
+								id="message"
+								name="message"
+								rows={4}
+								className="mt-1 p-1 w-full rounded-lg border border-gray-200 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+								placeholder="Tell me about your project..."
+							/>
+						</div>
+						<div className="flex justify-center">
+							<button
+								type="submit"
+								className="mt-3 px-6 py-3 w-1/3 text-lg rounded-full text-white bg-[#152042]"
+							>
+								Send Message
+							</button>
+						</div>
+					</form>
+				</div>
 			</section>
 		</>
 	);

@@ -10,12 +10,12 @@ export const PortfolioArray = [
                 url: "https://nextjs.org/"
             },
             {
-                title: "Tailwind CSS",
+                title: "HTML, Tailwind CSS, Vanilla JS",
                 url: "https://tailwindcss.com/"
             },
 
         ],
-        websiteURL: "https://www.bup.cards",
+        websiteURL: "https://bup.ai",
         websiteText: "Visit BŪP"
     },
     {
