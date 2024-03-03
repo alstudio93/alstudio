@@ -15,3 +15,15 @@ html {
 body {
   background-color: #010615;
 }
+
+
+  .lucide-chevron-down {
+    width: 4rem;
+    height: 4rem;
+  }
+@media screen and (min-width: 768px) {
+  .lucide-chevron-down {
+    width: 5rem;
+    height: 5rem;
+  }
+}
