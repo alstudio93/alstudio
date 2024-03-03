@@ -2,11 +2,11 @@ export const PortfolioArray = [
     {
         title: "BŪP Digital Business Card",
         createdBy: "Developed by ALStudio",
-        img: "/assets/portfolio/bup.png",
-        about: "Save time, money, & never miss a connection again with your new digital business card - BŪP! You only get one first impression, so ditch the paper business cards, and join the future of networking today!",
+        img: "/portfolio/bup.png",
+        about: "Revolutionize Your Sales Funnel with AI-Driven Lead Nurturing!",
         builtWith: [
             {
-                title: "NextJS",
+                title: "PHP / Laravel",
                 url: "https://nextjs.org/"
             },
             {
@@ -21,7 +21,7 @@ export const PortfolioArray = [
     {
         title: "CHarrisMusic, LLC",
         createdBy: "Developed by ALStudio",
-        img: "/assets/portfolio/charrismusic.png",
+        img: "/portfolio/charrismusic.png",
         about: "Dr. Christopher H. Harris is a choral music educator, conductor, and composer. His choirs have been recognized nationally in the US and his compositions have been performed internationally.",
         builtWith: [
             {
@@ -45,13 +45,13 @@ export const PortfolioArray = [
         websiteText: "Visit CHarrisMusic"
     },
     {
-        title: "Davies Law Firm, PLLC",
+        title: "Jeffrey Allen Murdock, Ph.D.",
         createdBy: "Developed by ALStudio",
-        img: "/assets/portfolio/daviddavieswebsite.webp",
-        about: "David Davies is an attorney located in Little Rock, Arkansas. He provides Estate Planning, Elder Law, and Veteran Planning Solutions. Together we worked to do a full revamp of his website to make it more modern and accessible.",
+        img: "/portfolio/jallenmurdock.png",
+        about: "Dr. Jeffrey Allen Murdock is internationally known as a conductor and clinician. He currently serves as Director of Choral Activities, Professor of Music, and founding director of the Arkansas Center for Black Music at the University of Arkansas.",
         builtWith: [
             {
-                title: "NextJS",
+                title: "Remix",
                 url: "https://nextjs.org/"
             },
             {
@@ -59,13 +59,12 @@ export const PortfolioArray = [
                 url: "https://tailwindcss.com/"
             },
         ],
-        websiteURL: "https://www.daviddavieslaw.com",
-        websiteText: "Visit Davies Law Firm, PLLC"
+        websiteURL: "https://www.jallenmurdock.com",
+        websiteText: "Visit JallenMurdock"
     },
     {
         title: "Ember House Grille",
         createdBy: "Design, Developed, and Branded by ALStudio & Loom Co. ",
-        // img: "/assets/portfolio/emberhouse.png",
         about: "Created by Loom Co. and ALStudio, Ember House Grille is a restaurant designed to demonstrate how we might orchestrate a full brand package. This was our first project working together and from the moment we started collaborating in Figma, we knew that we were in for a good time.",
         builtWith: [
             {
@@ -81,38 +80,38 @@ export const PortfolioArray = [
         websiteText: "Visit Ember House",
         branding: [
             {
-                img: "/assets/portfolio/EmberHouse/ember-house-one.png",
+                img: "/portfolio/EmberHouse/ember-house-one.png",
                 alt: "Ember House Branding",
                 imgHeight: 200,
                 imgWidth: 300,
 
             },
             {
-                img: "/assets/portfolio/EmberHouse/ember-house-two.png",
+                img: "/portfolio/EmberHouse/ember-house-two.png",
                 alt: "Ember House Branding",
                 imgHeight: 200,
                 imgWidth: 300,
             },
             {
-                img: "/assets/portfolio/EmberHouse/ember-house-three.png",
+                img: "/portfolio/EmberHouse/ember-house-three.png",
                 alt: "Ember House Branding",
                 imgHeight: 200,
                 imgWidth: 300,
             },
             {
-                img: "/assets/portfolio/EmberHouse/ember-house-four.png",
+                img: "/portfolio/EmberHouse/ember-house-four.png",
                 alt: "Ember House Branding",
                 imgHeight: 200,
                 imgWidth: 300,
             },
             {
-                img: "/assets/portfolio/EmberHouse/ember-house-five.png",
+                img: "/portfolio/EmberHouse/ember-house-five.png",
                 alt: "Ember House Branding",
                 imgHeight: 200,
                 imgWidth: 300,
             },
             {
-                img: "/assets/portfolio/EmberHouse/ember-house-six.png",
+                img: "/portfolio/EmberHouse/ember-house-six.png",
                 alt: "Ember House Branding",
                 imgHeight: 200,
                 imgWidth: 300,
