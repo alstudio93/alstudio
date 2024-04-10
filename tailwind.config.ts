@@ -38,7 +38,8 @@ const config: Config = {
       },
       fontSize: {
         'h1-clamp': 'clamp(2.4rem, 8vw, 5rem)',
-        'sub-heading-clamp': 'clamp(1.4rem, 5vw, 2rem)',
+        'sub-heading-clamp': 'clamp(1.3rem, 5vw, 2rem)',
+        'contact-heading-clamp': 'clamp(1.7rem, 5vw, 2rem)',
       }
     },
   },

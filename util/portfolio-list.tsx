@@ -1,6 +1,6 @@
 export const PortfolioArray = [
     {
-        title: "BŪP Digital Business Card",
+        title: "BŪP AI",
         createdBy: "Developed by ALStudio",
         img: "/portfolio/bup.png",
         about: "Revolutionize Your Sales Funnel with AI-Driven Lead Nurturing!",
