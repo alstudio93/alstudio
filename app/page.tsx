@@ -75,7 +75,6 @@ export default function Home() {
 						width={160}
 						height={160}
 						className="rounded-full w-1/3 sm:w-3/12 object-cover"
-						className="rounded-full w-1/3 sm:w-3/12 object-cover"
 					/>
 					<p className="font-nunito text-white text-center text-xl md:text-[1.5rem] leading-loose ">
 						Hi there! Welcome to ALStudio. My name is Andrew and I make it my goal to
@@ -161,8 +160,6 @@ export default function Home() {
 				<div className="max-w-2xl mx-auto my-10 p-8 rounded-lg bg-white">
 					<h2 className=" text-contact-heading-clamp text-center mb-6 font-montserrat">
 						Tell me about <br className="sm:hidden" /> your project
-					<h2 className=" text-contact-heading-clamp text-center mb-6 font-montserrat">
-						Tell me about <br className="sm:hidden" /> your project
 					</h2>
 					<form onSubmit={handleSendEmail} className="font-nunito">
 						<div className="mb-4">
@@ -228,7 +225,6 @@ export default function Home() {
 						<div className="flex justify-center">
 							<button
 								type="submit"
-								className="mt-3 px-6 py-3 w-full text-lg rounded-full text-white bg-[#152042]"
 								className="mt-3 px-6 py-3 w-full text-lg rounded-full text-white bg-[#152042]"
 							>
 								Send Message
