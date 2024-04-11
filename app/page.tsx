@@ -2,7 +2,7 @@
 
 import { PortfolioArray } from "@/util/portfolio-list";
 import axios from "axios";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, LoaderIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
@@ -15,14 +15,31 @@ export default function Home() {
 		websiteType: "",
 		message: ""
 	});
+
+	const [isLoading, setIsLoading] = useState(false);
+	const [emailSuccess, setEmailSuccess] = useState(false);
+	const [errorMessage, setErrorMessage] = useState("");
 	
 	const handleSendEmail = async (e: FormEvent) => {
 		e.preventDefault();
 		try {
+			setIsLoading(true);
 			const response = await axios.post("api/sendgrid", formData);
-			console.log("RESPONSE: ", response);
+			if (response.status === 201) {
+				setEmailSuccess(true);
+				setIsLoading(false);
+				setFormData({
+					fullName: "",
+					email: "",
+					websiteType: "",
+					message: ""
+				});
+			}
 		} catch (error: any) {
 			console.log(error.message);
+			if(error.response.status === 400) {
+				setErrorMessage("Please fill out all fields");
+			}
 		}
 	}
 	
@@ -166,6 +183,7 @@ export default function Home() {
 								id="name"
 								className="mt-1 py-1 px-2 w-full rounded-xl border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
 								placeholder="Andrew Ladd"
+								required
 								value={formData.fullName}
 								onChange={(e) => setFormData({...formData, fullName: e.target.value})}
 							/>
@@ -180,6 +198,7 @@ export default function Home() {
 								id="email"
 								className="mt-1 py-1 px-2 w-full rounded-xl border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
 								placeholder="andrew.laddstudio@gmail.com"
+								required
 								value={formData.email}
 								onChange={(e) => setFormData({...formData, email: e.target.value})}
 							/>
@@ -192,9 +211,11 @@ export default function Home() {
 								id="websiteType"
 								name="websiteType"
 								className="mt-1 block w-full rounded-md p-[6px] shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+								required
 								value={formData.websiteType}
 								onChange={(e) => setFormData({...formData, websiteType: e.target.value})}
 							>
+								<option value="">Select a Website Option</option>
 								<option value="personal">Personal</option>
 								<option value="portfolio">Portfolio</option>
 								<option value="business">Business</option>
@@ -212,17 +233,17 @@ export default function Home() {
 								rows={4}
 								className="mt-1 p-1 w-full rounded-lg border border-gray-200 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
 								placeholder="Tell me about your project..."
+								required
 								value={formData.message}
 								onChange={(e) => setFormData({...formData, message: e.target.value})}
 							/>
 						</div>
 						<div className="flex justify-center">
-							<button
-								type="submit"
-								className="mt-3 px-6 py-3 w-full text-lg rounded-full text-white bg-[#152042]"
-							>
-								Send Message
+							<button type="submit" className="mt-3 px-6 py-3 w-full text-lg rounded-full text-white bg-[#152042] flex justify-center items-center gap-x-2">
+							<LoaderIcon size={20} className={`${isLoading ? "block animate-spin" : "hidden"}`} />
+							{isLoading ? "Sending Email..." : "Send Message" } 
 							</button>
+							
 						</div>
 					</form>
 				</div>
