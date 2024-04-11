@@ -243,7 +243,7 @@ export default function Home() {
 							{isLoading ? "Sending Email..." : "Send Message" } 
 							</button>
 
-							{!emailSuccess && (
+							{emailSuccess && (
 								<>
 								<h5 className="mt-8 text-green-700 text-center text-lg">Email Sent Successfully! </h5>
 
