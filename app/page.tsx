@@ -27,10 +27,10 @@ export default function Home() {
 	}
 	
 	return (
-		<>
+		<div className="flex flex-col items-center gap-y-40 max-w-7xl w-full mx-auto mt-40 lg:mt-64">
 			{/* Hero Section */}
-			<section className="mt-8 lg:pt-48 flex flex-col items-center justify-between max-w-7xl w-full mx-auto">
-				<div className="w-full flex flex-col xl:flex-row justify-center items-center gap-x-44 gap-y-5 pt-10">
+			<section className="w-full">
+				<div className="w-full flex flex-col xl:flex-row justify-center items-center gap-x-44 gap-y-5">
 					<Image
 						src="/heading-cropped.png"
 						alt="ALStudio"
@@ -53,22 +53,16 @@ export default function Home() {
 						</Link>
 					</div>
 				</div>
-
-				<Link href="#about" className="mt-20 md:mt-10 hidden lg:block">
-					<ChevronDown className="text-white stroke-1" />
-				</Link>
 			</section>
 
 			{/* About ALStudio Section */}
-			<section
-				id="about"
-				className="flex flex-col justify-between h-full items-center max-w-7xl w-[98%] mx-auto mt-32 xs:scroll-m-12 sm:scroll-m-52"
+			<section id="about" className="xs:scroll-m-16 sm:scroll-m-32"
 			>
 				<h2 className="font-montserrat font-semibold text-white text-h1-clamp leading-tight text-center">
 					About Me
 				</h2>
 
-				<div className="flex flex-col items-center gap-y-10 mt-10 max-w-4xl">
+				<div className="flex flex-col items-center gap-y-10 mt-10">
 					<Image
 						src="/andrew.webp"
 						alt="About Me"
@@ -88,9 +82,7 @@ export default function Home() {
 			</section>
 
 			{/* Portfolio Section */}
-			<section
-				id="portfolio"
-				className="flex flex-col items-center max-w-5xl px-2 py-32 mx-auto md:pt-30 lg:mt-52 gap-y-10 text-white"
+			<section id="portfolio" className="flex flex-col items-center px-2 gap-y-10 text-white scroll-m-16 lg:scroll-m-40"
 			>
 				<h2 className="font-montserrat font-semibold text-white text-h1-clamp leading-tight text-center">
 					Portfolio
@@ -145,15 +137,15 @@ export default function Home() {
 							href={entry?.websiteURL}
 							target="_blank"
 							rel="noreferrer"
-							className="text-center px-16 py-4 rounded-lg shadow-lg dark:border border-slate-200 dark:shadow-none text-2xl hover:bg-[#ffffff13] hover:text-white transition-all"
+							className="text-center w-64 py-3 rounded-lg shadow-lg dark:border border-slate-200 dark:shadow-none text-2xl hover:bg-[#ffffff13] hover:text-white transition-all"
 						>
-							{entry.websiteText}
+							Visit Website
 						</Link>
 					</div>
 				))}
 			</section>
 
-			<section id="contact" className="max-w-7xl w-full mx-auto mt-32 mb-16 scroll-m-28">
+			<section id="contact" className="scroll-m-16 lg:scroll-m-32">
 				<h2 className="font-montserrat font-semibold text-white text-h1-clamp leading-tight text-center">
 					Contact
 				</h2>
@@ -239,6 +231,6 @@ export default function Home() {
 					&copy; {new Date().getFullYear()} ALStudio. All rights reserved.
 				</p>
 			</footer>
-		</>
+		</div>
 	);
 }
