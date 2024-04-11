@@ -18,7 +18,6 @@ export default function Home() {
 
 	const [isLoading, setIsLoading] = useState(false);
 	const [emailSuccess, setEmailSuccess] = useState(false);
-	const [errorMessage, setErrorMessage] = useState("");
 	
 	const handleSendEmail = async (e: FormEvent) => {
 		e.preventDefault();
@@ -27,6 +26,9 @@ export default function Home() {
 			const response = await axios.post("api/sendgrid", formData);
 			if (response.status === 201) {
 				setEmailSuccess(true);
+				setTimeout(() => {
+					setEmailSuccess(false);
+				}, 4000);
 				setIsLoading(false);
 				setFormData({
 					fullName: "",
@@ -37,9 +39,6 @@ export default function Home() {
 			}
 		} catch (error: any) {
 			console.log(error.message);
-			if(error.response.status === 400) {
-				setErrorMessage("Please fill out all fields");
-			}
 		}
 	}
 	
@@ -238,11 +237,19 @@ export default function Home() {
 								onChange={(e) => setFormData({...formData, message: e.target.value})}
 							/>
 						</div>
-						<div className="flex justify-center">
+						<div className="flex flex-col items-center justify-center">
 							<button type="submit" className="mt-3 px-6 py-3 w-full text-lg rounded-full text-white bg-[#152042] flex justify-center items-center gap-x-2">
 							<LoaderIcon size={20} className={`${isLoading ? "block animate-spin" : "hidden"}`} />
 							{isLoading ? "Sending Email..." : "Send Message" } 
 							</button>
+
+							{!emailSuccess && (
+								<>
+								<h5 className="mt-8 text-green-700 text-center text-lg">Email Sent Successfully! </h5>
+
+								<p className="mt-8 text-green-700 text-center"> Please check your inbox to view a <br/> recap of this inquiry. Please check your spam folder if you do not see it.</p>
+								</> 
+							)}
 							
 						</div>
 					</form>
