@@ -27,7 +27,7 @@ export default function Home() {
 	}
 	
 	return (
-		<div className="flex flex-col items-center gap-y-40 max-w-7xl w-full mx-auto mt-40 lg:mt-64">
+		<div className="flex flex-col items-center gap-y-40 max-w-7xl w-full mx-auto mt-32 lg:mt-60">
 			{/* Hero Section */}
 			<section className="w-full">
 				<div className="w-full flex flex-col xl:flex-row justify-center items-center gap-x-44 gap-y-5">
@@ -82,11 +82,12 @@ export default function Home() {
 			</section>
 
 			{/* Portfolio Section */}
-			<section id="portfolio" className="flex flex-col items-center px-2 gap-y-10 text-white scroll-m-16 lg:scroll-m-40"
+			<section id="portfolio" className="flex flex-col items-center px-2 text-white scroll-m-16 lg:scroll-m-40"
 			>
 				<h2 className="font-montserrat font-semibold text-white text-h1-clamp leading-tight text-center">
 					Portfolio
 				</h2>
+				<div className="flex flex-col gap-y-10">
 				{PortfolioArray.map((entry) => (
 					<div
 						key={entry.title}
@@ -118,7 +119,7 @@ export default function Home() {
 								))}
 							</div>
 						)}
-						<p className="text-center max-w-[320px] sm:max-w-[740px] lg:max-w-full text-[1.3rem] leading-loose font-nunito ">
+						<p className="text-center sm:max-w-[740px] lg:max-w-full text-[1.3rem] leading-loose font-nunito ">
 							{entry.about}
 						</p>
 						<div className="">
@@ -137,12 +138,13 @@ export default function Home() {
 							href={entry?.websiteURL}
 							target="_blank"
 							rel="noreferrer"
-							className="text-center w-64 py-3 rounded-lg shadow-lg dark:border border-slate-200 dark:shadow-none text-2xl hover:bg-[#ffffff13] hover:text-white transition-all"
+							className="text-center w-64 py-3 rounded-lg border border-slate-200  text-2xl hover:bg-[#ffffff13] hover:text-white transition-all"
 						>
 							Visit Website
 						</Link>
 					</div>
 				))}
+				</div>
 			</section>
 
 			<section id="contact" className="scroll-m-16 lg:scroll-m-32">
