@@ -15,13 +15,13 @@ export const Navbar: FC<Props> = () => {
 		<button type="button" onClick={()=> setIsOpen(true)} className="fixed top-2 right-3 bg-[#010615] p-3 rounded-lg lg:hidden text-white">
 			<Menu size={40} />
 		</button>
-		<nav className={`lg:px-20 fixed top-0 left-0 right-0 bottom-0 lg:bottom-auto max-w-[2000px] w-full lg:h-32 ${isOpen ? "flex bg-[#000]" : "hidden"} lg:flex justify-center items-center mx-auto text-white font-montserrat bg-[#010615]`}>
+		<nav className={`lg:px-20 fixed overflow-auto top-0 left-0 right-0 bottom-0 lg:bottom-auto max-w-[2000px] w-full lg:h-32 ${isOpen ? "flex bg-[#000]" : "hidden"} lg:flex justify-center items-center mx-auto text-white font-montserrat bg-[#010615]`}>
 			<div className="relative pt-20 lg:pt-0 flex flex-col gap-y-32 lg:flex-row lg:justify-between items-center h-full w-full">
-			<button type="button" onClick={()=> setIsOpen(false)} className="border rounded-full p-1 absolute top-5 right-5 lg:hidden text-white">
-				<X size={40} />
-			</button>
+				<button type="button" onClick={()=> setIsOpen(false)} className="border rounded-full p-1 absolute top-5 right-5 lg:hidden text-white">
+					<X size={40} />
+				</button>
 				<Link href="/">
-					<Image src="/logo.webp" alt="ALStudio" width={160} height={160} className="w-64 lg:w-40"/>
+					<Image src="/logo.webp" alt="ALStudio" width={160} height={160} className="w-52 lg:w-40" />
 				</Link>
 				<ul className="flex flex-col lg:flex-row items-center gap-y-20 lg:gap-10 text-2xl">
 					<li onClick={()=> setIsOpen(false)}>
