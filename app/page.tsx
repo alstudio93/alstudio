@@ -240,7 +240,7 @@ export default function Home() {
 						<div className="flex flex-col items-center justify-center">
 							<button type="submit" className="mt-3 px-6 py-3 w-full text-lg rounded-full text-white bg-[#152042] flex justify-center items-center gap-x-2">
 							<LoaderIcon size={20} className={`${isLoading ? "block animate-spin" : "hidden"}`} />
-							{isLoading ? "Sending Email..." : "Send Message" } 
+							{isLoading ? "Sending Email..." : "Send Message" }
 							</button>
 
 							{emailSuccess && (
