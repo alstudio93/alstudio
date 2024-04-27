@@ -5,25 +5,25 @@
 html,
 body,
 :root {
-  min-height: 100%;
+	min-height: 100%;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  background-color: #010615;
+	background-color: #01040f;
 }
 
+.lucide-chevron-down {
+	width: 4rem;
+	height: 4rem;
+}
 
-  .lucide-chevron-down {
-    width: 4rem;
-    height: 4rem;
-  }
 @media screen and (min-width: 768px) {
-  .lucide-chevron-down {
-    width: 5rem;
-    height: 5rem;
-  }
+	.lucide-chevron-down {
+		width: 5rem;
+		height: 5rem;
+	}
 }
