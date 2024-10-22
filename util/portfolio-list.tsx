@@ -1,8 +1,21 @@
 export const PortfolioArray = [
     {
+        title: "Game Drive",
+        createdBy: "Designed & Developed by ALStudio and Loom Co.",
+        img: "/portfolio/gamedrive.png",
+        about: "Game Drive is an esports analytics platform enabling discovery of emerging talent.",
+        builtWith: [
+            {
+                title: "Wordpress",
+            },
+        ],
+        websiteURL: "https://gamedrive.io",
+        websiteText: "Visit GameDrive"
+    },
+    {
         title: "BŪP AI",
         createdBy: "Developed by ALStudio",
-        img: "/portfolio/bup.png",
+        img: "/portfolio/bupai.png",
         about: "Revolutionize Your Sales Funnel with AI-Driven Lead Nurturing!",
         builtWith: [
             {

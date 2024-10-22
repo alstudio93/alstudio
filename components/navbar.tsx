@@ -2,6 +2,7 @@
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { FC, useEffect, useState } from "react";
 
 interface Props {}
@@ -21,7 +22,7 @@ export const Navbar: FC<Props> = () => {
 						<X size={40} />
 					</button>
 					<Link href="/">
-						<Image src="/logo.webp" alt="ALStudio" width={160} height={160} className="w-52 lg:w-40" />
+						<Image src="/alstudio.webp" alt="ALStudio" width={160} height={160} className="w-52 lg:w-40" />
 					</Link>
 					<ul className="flex flex-col lg:flex-row items-center gap-y-12 lg:gap-10 text-xl md:text-2xl">
 						<li onClick={()=> setIsOpen(false)}>
